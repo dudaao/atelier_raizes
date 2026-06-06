@@ -382,8 +382,54 @@ footer {
 
 /* TEXTO */
 
+/* ==================================================================
+   1. ESTILO BASE DO BANNER (Igual para todas as páginas)
+   ================================================================== */
 .category-header {
-    margin-bottom: 70px;
+    width: 100%;
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+}
+
+/* Mantém o texto alinhado com o menu */
+.category-header-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==================================================================
+   2. IMAGENS EXCLUSIVAS DE CADA PÁGINA (Com a película + desvanecer)
+   ================================================================== */
+
+/* Imagem da página de Jarros */
+.header-jarros {
+    background-image:
+        linear-gradient(to bottom, rgba(128, 128, 128, 0.45) 0%, rgba(128, 128, 128, 0.3) 65%, #e8d8bf 100%),
+        url('images/jarrosHeader.jpg');
+    /* Nome da sua foto de jarros */
+}
+
+/* Imagem da página de Pratos */
+.header-pratos {
+    background-image:
+        linear-gradient(to bottom, rgba(128, 128, 128, 0.45) 0%, rgba(128, 128, 128, 0.3) 65%, #e8d8bf 100%),
+        url('images/pratosHeader.jpg');
+    /* Nome da sua foto de pratos */
+}
+
+/* Imagem da página de Canecas */
+.header-canecas {
+    background-image:
+        linear-gradient(to bottom, rgba(128, 128, 128, 0.45) 0%, rgba(128, 128, 128, 0.3) 65%, #e8d8bf 100%),
+        url('images/canecasHeader.jpg');
+    /* Nome da sua foto de canecas */
 }
 
 .category-header h1 {
