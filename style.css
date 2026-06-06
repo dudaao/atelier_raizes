@@ -1,0 +1,766 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1e1e1e;
+    color: #2f2f2f;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+header {
+    background: #e8d8bf;
+    border-bottom: 2px solid #d4b48c;
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-circle {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #f28c00;
+}
+
+.logo h1 {
+    font-size: 22px;
+    color: #7a4a1f;
+}
+
+/* NAV */
+
+nav {
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    font-size: 15px;
+    color: #4d3422;
+
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #ef6c00;
+}
+
+/* BOTÕES */
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 18px;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background: #f28c00;
+    color: white;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid #c97d28;
+    color: #c97d28;
+}
+
+/* ========================= */
+/* HERO */
+/* ========================= */
+
+.hero {
+    background: #e8d8bf;
+    padding: 70px 0;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    align-items: center;
+}
+
+.hero-text h2 {
+    font-size: 70px;
+    line-height: 1;
+
+    color: #ef6c00;
+
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 24px;
+    line-height: 1.5;
+
+    max-width: 550px;
+}
+
+.hero-image {
+    height: 450px;
+
+    background: #d9c2a5;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+/* ========================= */
+/* PLACEHOLDER */
+/* ========================= */
+
+.placeholder {
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(45deg,
+            #c9b094,
+            #dbc8b0);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #7b5b43;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* ========================= */
+/* SECTIONS */
+/* ========================= */
+
+section {
+    background: #e8d8bf;
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 58px;
+    color: #ef6c00;
+
+    margin-bottom: 45px;
+}
+
+/* ========================= */
+/* PRODUTOS HOME */
+/* ========================= */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #f3e7d3;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    height: 260px;
+    background: #ccb293;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    color: #5a3417;
+
+    margin-bottom: 12px;
+
+    font-size: 24px;
+}
+
+.price {
+    display: block;
+
+    color: #ef6c00;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+.buy-btn {
+    width: 100%;
+
+    border: none;
+
+    background: #f39200;
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+/* ========================= */
+/* REVIEWS HOME */
+/* ========================= */
+
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.review-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .05);
+}
+
+.stars {
+    color: #ff9900;
+
+    margin-bottom: 15px;
+
+    font-size: 20px;
+}
+
+.review-card h4 {
+    margin-bottom: 10px;
+}
+
+.review-user {
+    margin-top: 15px;
+
+    font-weight: bold;
+
+    color: #7a4a1f;
+}
+
+/* ========================= */
+/* ABOUT */
+/* ========================= */
+
+.about {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+
+    align-items: center;
+}
+
+.about-image {
+    width: 100%;
+    height: 320px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background: #ccb293;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer {
+    background: #3a2b20;
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+/* ======================================== */
+/* PÁGINAS PRATOS / JARROS / CANECAS */
+/* ======================================== */
+
+.category-page {
+    background: #e8d8bf;
+    min-height: 100vh;
+
+    padding: 80px 0;
+}
+
+/* TEXTO */
+
+.category-header {
+    margin-bottom: 70px;
+}
+
+.category-header h1 {
+    font-size: 90px;
+    color: #ef6c00;
+
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+.category-header p {
+    font-size: 28px;
+    line-height: 1.4;
+
+    color: #2f2f2f;
+
+    max-width: 850px;
+}
+
+/* PRODUTOS */
+
+.product-card {
+    background: #e2d3bf;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+}
+
+.product-image {
+    height: 250px;
+
+    background: #d2bea5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #8a6240;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.product-content {
+    padding: 20px;
+}
+
+.product-content h3 {
+    font-size: 22px;
+
+    color: #4b2a13;
+
+    margin-bottom: 10px;
+}
+
+.product-content .price {
+    color: #ef6c00;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.product-content button {
+    width: 100%;
+
+    border: none;
+
+    background: #f39200;
+    color: white;
+
+    padding: 14px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+/* ======================================== */
+/* AVALIAÇÕES DAS PÁGINAS */
+/* ======================================== */
+
+.reviews-grid {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+    margin-top: 40px;
+}
+
+/* CAIXA */
+
+.review-box {
+    width: 300px;
+
+    background: #f3e7d3;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+
+    transition: .3s;
+}
+
+.review-box:hover {
+    transform: translateY(-5px);
+}
+
+/* PERFIL */
+
+.review-profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+}
+
+/* FOTO */
+
+.profile-placeholder {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    background: #d2bea5;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #7a5b42;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+}
+
+/* ESTRELAS */
+
+.review-box .stars {
+    color: #ff9900;
+
+    font-size: 20px;
+
+    margin-bottom: 2px;
+}
+
+/* TÍTULO */
+
+.review-box h3 {
+    color: #4b2a13;
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+/* TEXTO */
+
+.review-box p {
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+
+    color: #3d3127;
+}
+
+/* USUÁRIO */
+
+.review-user {
+    color: #7a4a1f;
+
+    font-weight: 600;
+}
+
+/* ========================= */
+/* RESPONSIVO */
+/* ========================= */
+
+@media(max-width:900px) {
+
+    .hero-content,
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text h2 {
+        font-size: 50px;
+    }
+
+    .category-header h1 {
+        font-size: 60px;
+    }
+
+    .category-header p {
+        font-size: 20px;
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+@media(max-width:768px) {
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 42px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* EFEITO HOVER NOS PRODUTOS */
+
+.product-card {
+    transition: .3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+/* ======================================== */
+/* LOGIN E REGISTRO */
+/* ======================================== */
+
+.auth-page {
+    min-height: 100vh;
+
+    background: #e8d8bf;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+}
+
+.auth-box {
+    width: 100%;
+    max-width: 450px;
+
+    background: #f3e7d3;
+
+    padding: 45px;
+
+    border-radius: 24px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+.auth-logo {
+    display: flex;
+
+    justify-content: center;
+
+    margin-bottom: 35px;
+}
+
+.auth-box h2 {
+    font-size: 42px;
+
+    color: #ef6c00;
+
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+.auth-subtitle {
+    text-align: center;
+
+    font-size: 17px;
+
+    color: #5f5145;
+
+    margin-bottom: 35px;
+}
+
+.auth-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.input-group label {
+    color: #5a3417;
+
+    font-weight: 600;
+}
+
+.input-group input {
+    padding: 14px 16px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: white;
+
+    font-size: 15px;
+
+    outline: none;
+
+    border: 2px solid transparent;
+
+    transition: .3s;
+}
+
+.input-group input:focus {
+    border-color: #ef6c00;
+}
+
+.auth-btn {
+    border: none;
+
+    background: #f39200;
+
+    color: white;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+
+    transition: .3s;
+}
+
+.auth-btn:hover {
+    transform: translateY(-3px);
+}
+
+.auth-switch {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #5f5145;
+}
+
+.auth-switch a {
+    color: #ef6c00;
+
+    font-weight: 600;
+}
