@@ -59,12 +59,14 @@ header {
     height: 42px;
 
     border-radius: 50%;
-
-    background: #f28c00;
 }
 
 .logo h1 {
-    font-size: 22px;
+    font-family: 'Caveat', cursive;
+    font-size: 32px;
+    font-weight: 500;
+
+    font-size: 30px;
     color: #7a4a1f;
 }
 
@@ -139,6 +141,9 @@ nav a:hover {
 }
 
 .hero-text h2 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: #e67e00;
+    font-weight: 400;
     font-size: 70px;
     line-height: 1;
 
@@ -148,6 +153,10 @@ nav a:hover {
 }
 
 .hero-text p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+    /* Ajuste para o tamanho desejado */
+    font-weight: 400;
     font-size: 24px;
     line-height: 1.5;
 
@@ -195,6 +204,9 @@ section {
 }
 
 .section-title {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    /* Ajuste o tamanho conforme o seu layout */
+    font-weight: 400;
     font-size: 58px;
     color: #ef6c00;
 
@@ -337,7 +349,10 @@ section {
 }
 
 .about-text p {
+    font-family: 'JetBrains Mono', monospace;
     font-size: 18px;
+    /* Ajuste para o tamanho desejado */
+    font-weight: 400;
     line-height: 1.8;
 }
 
@@ -372,15 +387,19 @@ footer {
 }
 
 .category-header h1 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    /* Ajuste o tamanho conforme o seu layout */
+    font-weight: 400;
     font-size: 90px;
     color: #ef6c00;
-
-    font-weight: 700;
-
     margin-bottom: 25px;
 }
 
 .category-header p {
+    font-family: 'JetBrains Mono', monospace;
+
+    font-weight: 400;
+    line-height: 1.5;
     font-size: 28px;
     line-height: 1.4;
 
