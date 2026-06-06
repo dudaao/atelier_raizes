@@ -829,3 +829,26 @@ footer {
 
     font-weight: 600;
 }
+
+/* ==================================================================
+   ANIMAÇÃO DE TRANSIÇÃO
+   ================================================================== */
+header, .category-header, section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+body.page-loaded header,
+body.page-loaded .category-header,
+body.page-loaded section {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body.page-exit header,
+body.page-exit .category-header,
+body.page-exit section {
+    opacity: 0;
+    transform: translateY(-20px);
+}
